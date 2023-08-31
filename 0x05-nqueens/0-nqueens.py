@@ -25,7 +25,6 @@ if __name__ == '__main__':
     stop = False
     r = 0
     c = 0
-
     
     # iterate thru rows
     while r < n:
@@ -40,15 +39,13 @@ if __name__ == '__main__':
                         col - (r-cord[0]) == c):
                     safe = False
                     break
-
-                    
+         
             if not safe:
                 if c == n - 1:
                     goback = True
                     break
                 c += 1
                 continue
-
                 
             # place queen
             cords = [r, c]
